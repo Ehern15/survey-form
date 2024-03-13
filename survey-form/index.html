@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Web Form</title>
+  <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <img src="logo512.png" alt="logo" id="logo" />
+  </header>
+  <h1 id="title">React Survey</h1>
+  <p id="description">This is a web form used to collect feedback on your experience.</p>
+  <form id="survey-form">
+    <div>
+      <label for="name" id="name-label">First Name:</label>
+      <input type="text" id="name" placeholder="Insert name here" required>
+    </div>
+    <div>
+      <label for="name" id="name-label">Last Name:</label>
+      <input type="text" id="name" placeholder="Insert name here" required>
+    </div>
+    <div>
+      <label id="email-label">Email:</label>
+      <input type="email" id="email" placeholder="Insert Email here" required>
+    </div>
+    <div>
+      <label id="number-label">Number:</label>
+      <input type="number" id="number" min="0" max="99" placeholder="123">
+    </div>
+    <div>
+      <label>What is your Gender:</label>
+      <select id="dropdown">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Do you know about React?</label>
+      <label>yes</label>
+      <input type="radio" name="radio" id="radio" value="yes">
+
+      <label>no</label>
+      <input type="radio" name="radio" id="radio" value="no">
+
+    </div>
+    <div>
+      <label>Which of these do you know about?</label>
+      
+      <input type="checkbox" id="html" name="html" value="HTML">
+      <label for="html"> HTML</label>
+      <input type="checkbox" id="CSS" name="CSS" value="CSS">
+      <label for="CSS"> CSS</label>
+      <input type="checkbox" id="Javascript" name="Javascript" value="Javascript">
+      <label for="Javascript"> Javascript</label>
+    </div>
+    <div>
+      <label>Comments: </label>
+      <textarea rows="6" cols="75">
+          </textarea>
+    </div>
+    <footer>
+      <button id="submit">Submit
+      </button>
+    </footer>
+
+  </form>
+</body>
+
+</html>
